@@ -534,13 +534,12 @@ img {
   color: #fff;
   margin-bottom: 16px;
 }
-.subscribe-list {
+.subscribe-form {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 24px;
+  flex-wrap: nowrap;
 }
-.subscribe-btn-email {
+.subscribe-input {
   text-align: left;
   font-weight: 400;
   font-size: 12px;
@@ -554,6 +553,7 @@ img {
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   padding: 8px 16px;
+  margin-right: 24px;
 }
 
 .subscribe-btn {
@@ -563,6 +563,18 @@ img {
   height: 40px;
   background-color: #4d5ae5;
   color: #fff;
+  border: none;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-btn :hover,
+.subscribe-btn :focus {
+  background-color: #404bbf;
+}
+
+.subscribe-icon {
+  fill: #fff;
 }
 /* Modal */
 
